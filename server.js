@@ -1,3 +1,15 @@
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+
+
 /*
 var io = require('socket.io').listen(80);
 
@@ -10,6 +22,7 @@ io.sockets.on('connection', function(socket){
     });
 });
 */
+/*
 var net = require('net');
 
 // 소켓 서버 생성
@@ -34,7 +47,10 @@ var server = net.createServer(function (socket) {
     });
              
 });
+
 // 소켓 서버 실행
 var port = 3000;
 server.listen(port);
 console.log('소켓 서버 실행됨 : ' + port);
+*/
+
